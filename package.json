@@ -1,0 +1,35 @@
+{
+  "name": "ai-task-scheduler",
+  "version": "1.0.0",
+  "description": "AI-powered task scheduling Chrome extension",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/plugin-transform-runtime": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@babel/runtime": "^7.22.0",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "postcss": "^8.4.49",
+    "rimraf": "^5.0.0",
+    "tailwindcss": "^3.4.15",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  }
+}

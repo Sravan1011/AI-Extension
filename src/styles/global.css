@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for calendar */
+.calendar-grid {
+  @apply grid grid-cols-7 gap-px;
+}
+
+.calendar-day {
+  @apply min-h-[100px] p-2 border;
+}
+
+.calendar-day-header {
+  @apply font-medium text-center p-2;
+}
+
+.calendar-nav-button {
+  @apply p-2 hover:bg-gray-100 rounded;
+}
+
+.task-item {
+  @apply p-1 mb-1 text-xs rounded cursor-pointer;
+}
+
+.task-high-priority {
+  @apply bg-red-100 text-red-800;
+}
+
+.task-normal-priority {
+  @apply bg-blue-100 text-blue-800;
+}
